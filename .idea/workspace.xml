@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="169f0654-6693-45dc-be2f-093aa8e3a739" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ui/atoms/typography/body1.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/atoms/typography/body2.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/atoms/typography/button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/atoms/typography/caption.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/atoms/typography/h1.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/atoms/typography/h2.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/atoms/typography/h3.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/atoms/typography/h4.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/atoms/typography/h5.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/atoms/typography/h6.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/atoms/typography/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/atoms/typography/overline.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/atoms/typography/subtitle1.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/atoms/typography/subtitle2.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/item-card/item-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/item-card/item-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/atoms/button/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/atoms/button/button.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ui/atoms/typography" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -42,6 +58,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ui/atoms/typography" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -59,6 +76,7 @@
       <updated>1647772556272</updated>
       <workItem from="1647772557863" duration="153000" />
       <workItem from="1647772723723" duration="11156000" />
+      <workItem from="1647877572482" duration="1373000" />
     </task>
     <servers />
   </component>

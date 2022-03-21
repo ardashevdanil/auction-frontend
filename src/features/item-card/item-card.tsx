@@ -2,6 +2,7 @@ import { ItemCardProps } from "./item-card.types";
 import { Image } from "ui/atoms/image";
 import { useCountdown } from "lib/hooks/use-countdown/use-countdown";
 import { Button } from "ui/atoms/button";
+import { Typography } from "ui/atoms/typography";
 
 export function ItemCard(props: ItemCardProps) {
   const [countdown] = useCountdown(props.end_date)
@@ -13,7 +14,7 @@ export function ItemCard(props: ItemCardProps) {
         </div>
         <div className="w-full grow px-3 py-2">
           <h3 className="text-lg font-semibold mb-4">
-            {props.title}
+            <Typography.H5>{props.title}</Typography.H5>
             <span className="text-xs text-gray-500 block">
               {countdown}
             </span>
