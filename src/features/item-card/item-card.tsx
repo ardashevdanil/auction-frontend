@@ -1,6 +1,7 @@
 import { Image } from "@ui";
 import { useCountdown } from "@lib/hooks";
 import { ButtonContained } from "@ui";
+import { Typography } from "@ui";
 
 import type { ItemCardProps } from "./item-card.types";
 
@@ -14,7 +15,7 @@ export function ItemCard(props: ItemCardProps) {
         </div>
         <div className="w-full grow px-3 py-2">
           <h3 className="text-lg font-semibold mb-4">
-            {props.title}
+            <Typography.H5>{props.title}</Typography.H5>
             <span className="text-xs text-gray-500 block">{countdown}</span>
           </h3>
           <div className="flex flex-row justify-between">

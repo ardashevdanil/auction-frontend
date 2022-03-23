@@ -3,3 +3,4 @@ export * from "./date-input";
 export * from "./image";
 export * from "./text-input";
 export * from "./checkbox";
+export * from "./typography";

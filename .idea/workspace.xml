@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="169f0654-6693-45dc-be2f-093aa8e3a739" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/filter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/item-card/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/item-card/item-card.mock.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/item-card/item-card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/item-card/item-card.types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/item-list/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/item-list/item-list.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/hooks/use-countdown/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/hooks/use-countdown/use-countdown.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/atoms/button/button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/atoms/button/button.types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/atoms/button/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/atoms/image/image.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/atoms/image/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/atoms/input/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/atoms/input/input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/atoms/input/input.types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/organisms/header/header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/organisms/header/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/atoms/typography/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/atoms/typography/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +23,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ui/atoms/typography" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -69,6 +42,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ui/atoms/typography" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -85,7 +59,8 @@
       <option name="presentableId" value="Default" />
       <updated>1647772556272</updated>
       <workItem from="1647772557863" duration="153000" />
-      <workItem from="1647772723723" duration="10434000" />
+      <workItem from="1647772723723" duration="11156000" />
+      <workItem from="1647877572482" duration="1434000" />
     </task>
     <servers />
   </component>
