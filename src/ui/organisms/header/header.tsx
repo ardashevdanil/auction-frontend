@@ -2,7 +2,7 @@ import { Image } from "ui/atoms/image";
 import logo from "assets/images/logo.png";
 import avatar from "assets/images/avatar.png";
 import filter from "assets/images/filter.png";
-import { Input } from "ui/atoms/input";
+import { TextInput } from "@ui";
 
 export function Header() {
   return (
@@ -12,7 +12,7 @@ export function Header() {
         <h1 className="font-brand ml-3">Auction™</h1>
       </div>
       <div className="grow px-12 flex flex-row items-center">
-        <Input placeholder="Начинай вводить..." />
+        <TextInput placeholder="Начинай вводить..." />
         <div className="ml-4 inline-block h-8">
           <Image src={filter} height="32px" width="32px" />
         </div>
@@ -21,5 +21,5 @@ export function Header() {
         <Image src={avatar} height="32px" width="32px" />
       </div>
     </header>
-  )
+  );
 }

@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Header } from "ui/organisms/header";
+import { Header } from "@ui";
 import { ItemList } from "features/item-list";
 
 const Home: NextPage = () => {
