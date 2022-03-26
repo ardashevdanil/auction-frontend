@@ -21,7 +21,9 @@
       "@providers": ["./providers/index"],
       "@assets/*": ["./assets/*"],
       "@lib/*": ["./lib/*"],
-      "@features/*": ["./features/*"]
+      "@features/*": ["./features/*"],
+      "@store": ["./store/index"],
+      "@store/*": ["./store/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
