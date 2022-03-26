@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev & yarn ts:watch",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "dev:ts": "",
+    "ts": "tsc --noEmit --incremental",
+    "ts:watch": "yarn ts --watch",
     "prepare": "husky install",
     "prettier-check": "prettier -c \"src/**/*.(ts|tsx)\""
   },
@@ -17,8 +20,11 @@
     "node": ">=16"
   },
   "dependencies": {
+    "@types/debug": "4.1.7",
+    "axios": "0.26.1",
     "classnames": "2.3.1",
     "date-fns": "2.28.0",
+    "debug": "4.3.4",
     "mobx": "6.5.0",
     "mobx-react": "7.3.0",
     "mobx-state-tree": "5.1.3",

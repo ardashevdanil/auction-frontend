@@ -23,7 +23,9 @@
       "@lib/*": ["./lib/*"],
       "@features/*": ["./features/*"],
       "@store": ["./store/index"],
-      "@store/*": ["./store/*"]
+      "@store/*": ["./store/*"],
+      "@api": ["./api/index"],
+      "@api/*": ["./api/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

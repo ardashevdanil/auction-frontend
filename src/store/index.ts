@@ -1,14 +1,14 @@
 import { applySnapshot, getSnapshot } from "mobx-state-tree";
 
-import { Root } from "./root";
-import type { RootType } from "./root";
+import { RootStore } from "./root-store";
+import type { RootStoreType, RootStoreSnapshotType } from "./root-store";
 
-let store: RootType;
+let store: RootStoreType;
 
-export function initializeStore(snapshot?: string) {
-  const _store: RootType =
+export function initializeStore(snapshot?: RootStoreSnapshotType) {
+  const _store: RootStoreType =
     store ??
-    Root.create({
+    RootStore.create({
       lots: {},
     });
 
@@ -23,7 +23,10 @@ export function initializeStore(snapshot?: string) {
   return store || _store;
 }
 
-export function injectServerSideStore<T = Object>(store: RootType, props?: T) {
+export function injectServerSideStore<T = object>(
+  store: RootStoreType,
+  props?: T
+) {
   return {
     props: {
       ...(props || {}),

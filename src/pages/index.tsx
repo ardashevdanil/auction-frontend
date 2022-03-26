@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Header } from "@ui";
 import { initializeStore, injectServerSideStore } from "@store";
+import { Header } from "@features/navigation";
 import { ItemList } from "features/item-list";
 
 const Home: NextPage = () => {
@@ -21,10 +21,10 @@ const Home: NextPage = () => {
   );
 };
 
-export function getServerSideProps() {
+export async function getServerSideProps() {
   const store = initializeStore();
 
-  store.user.setName("Biba");
+  await store.user.fetchUser();
 
   return injectServerSideStore(store);
 }

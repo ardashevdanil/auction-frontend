@@ -1,8 +1,8 @@
 import { useMemo } from "react";
 
 import { initializeStore } from "@store";
-import type { RootType } from "@store/root";
+import type { RootStoreSnapshotType } from "@store/root-store";
 
-export function useInitializeStore(initialState: RootType) {
+export function useInitializeStore(initialState: RootStoreSnapshotType) {
   return useMemo(() => initializeStore(initialState), [initialState]);
 }
