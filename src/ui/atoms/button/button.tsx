@@ -1,23 +1,30 @@
-import cn from "classnames";
+import { twMerge } from "tailwind-merge";
 import { ButtonProps } from "./button.types";
 import { Typography } from "ui/atoms/typography";
 
-export const baseButtonClasses = "px-4 py-2 rounded-sm transition-colors";
+export const baseButtonClasses =
+  "inline-flex items-center justify-center px-4 py-2 bg-transparent rounded-sm transition-colors";
 
-function buttonFactory(className: string) {
+function buttonFactory(classes: string) {
   return function Button(props: ButtonProps) {
+    const { as: Element = "button", className, ...rest } = props;
     return (
-      <button className={cn(baseButtonClasses, className)} {...props}>
+      <Element
+        className={twMerge(baseButtonClasses, classes, className)}
+        {...rest}
+      >
         <Typography.Button>{props.children}</Typography.Button>
-      </button>
+      </Element>
     );
   };
 }
+
+export const ButtonText = buttonFactory("text-emerald-500");
 
 export const ButtonContained = buttonFactory(
   "bg-emerald-500 text-white hover:bg-emerald-600"
 );
 
 export const ButtonOutlined = buttonFactory(
-  "bg-transparent text-emerald-500 hover:text-emerald-600 border border-solid border-emerald-600 hover:border-emerald-600"
+  "text-emerald-500 hover:text-emerald-600 border border-solid border-emerald-600 hover:border-emerald-600"
 );

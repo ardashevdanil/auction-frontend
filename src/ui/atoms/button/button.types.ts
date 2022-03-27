@@ -1,3 +1,6 @@
-import { ButtonHTMLAttributes } from "react";
+import { ButtonHTMLAttributes, AnchorHTMLAttributes, ElementType } from "react";
 
-export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
+export type ButtonProps = {
+  as?: ElementType;
+} & ButtonHTMLAttributes<HTMLButtonElement> &
+  AnchorHTMLAttributes<HTMLAnchorElement>;

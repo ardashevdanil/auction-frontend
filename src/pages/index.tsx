@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { initializeStore, injectServerSideStore } from "@store";
-import { Header } from "@features/navigation";
+import { CommonPageTemplate } from "@features/common";
 import { ItemList } from "features/item-list";
 
 const Home: NextPage = () => {
@@ -13,10 +13,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="px-8 md:container mx-auto">
-        <Header />
+      <CommonPageTemplate>
         <ItemList />
-      </main>
+      </CommonPageTemplate>
     </div>
   );
 };
