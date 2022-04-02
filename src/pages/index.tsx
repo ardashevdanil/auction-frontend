@@ -3,8 +3,6 @@ import Head from "next/head";
 import { initializeStore, injectServerSideStore } from "@store";
 import { CommonPageTemplate } from "@features/common";
 import { ItemList } from "features/item-list";
-import { getSession } from "next-auth/client";
-import { http } from "@lib/http";
 
 const Home: NextPage = () => {
   return (
