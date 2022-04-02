@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="169f0654-6693-45dc-be2f-093aa8e3a739" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/api/auth/[...nextauth].ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/me/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/me/me.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/profile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/me/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/me/me.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/me/me.types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/navigation/organisms/search-header/search-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/navigation/organisms/search-header/search-header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/http.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/http.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/root-store/root-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/root-store/root-store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +26,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -74,7 +88,7 @@
       <workItem from="1647772557863" duration="153000" />
       <workItem from="1647772723723" duration="11156000" />
       <workItem from="1647877572482" duration="1434000" />
-      <workItem from="1648890964410" duration="4321000" />
+      <workItem from="1648890964410" duration="11350000" />
     </task>
     <servers />
   </component>

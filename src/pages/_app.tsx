@@ -1,6 +1,7 @@
 import "lib/styles/globals.css";
 import { Provider } from "mobx-react";
 import type { AppProps } from "next/app";
+import { Provider as AuthProvider } from "next-auth/client";
 
 import { useInitializeStore } from "@lib/hooks";
 
@@ -10,7 +11,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <Provider store={store}>
-      <Component {...rest} />
+      <AuthProvider session={session}>
+        <Component {...rest} />
+      </AuthProvider>
     </Provider>
   );
 }
