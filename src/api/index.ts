@@ -1,11 +1,14 @@
-import { userApi } from "./user";
-import { lotApi } from "./lot";
+import { itemsApi } from "./items";
 import { meApi } from "./me";
 
 export const api = {
-  user: userApi,
-  lot: lotApi,
+  items: itemsApi,
   me: meApi,
 };
 
-export type { StrapiQueryFilters } from "./types";
+export type {
+  StrapiQueryFilters,
+  CommonResData,
+  ResMetaData,
+  ResPaginationData,
+} from "./types";

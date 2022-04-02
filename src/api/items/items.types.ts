@@ -1,6 +1,6 @@
 import type { StrapiQueryFilters } from "../types";
 
-export type LotFindQueryParams = {
+export type ItemsFindQueryParams = {
   title?: StrapiQueryFilters;
   desctiption?: StrapiQueryFilters;
   start_bet?: StrapiQueryFilters;

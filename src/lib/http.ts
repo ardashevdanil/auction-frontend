@@ -15,7 +15,7 @@ class HttpProvider {
   private instance: AxiosInstance;
 
   logRequest(req: AxiosRequestConfig) {
-    logger.http("Request", {
+    logger.httpReq({
       url: req?.url,
       method: req?.method,
       params: req?.params,
@@ -24,7 +24,7 @@ class HttpProvider {
   }
 
   logResponse(res: AxiosResponse) {
-    logger.http("Response", {
+    logger.httpRes({
       status: res?.status,
       data: res?.data,
       url: res?.config?.url,
@@ -32,8 +32,8 @@ class HttpProvider {
     return res;
   }
 
-  request(config: AxiosRequestConfig) {
-    return this.instance.request(config);
+  request<T = any>(config: AxiosRequestConfig) {
+    return this.instance.request<T>(config);
   }
 
   setHeader(name: string, value: string) {

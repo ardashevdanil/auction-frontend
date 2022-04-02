@@ -6,11 +6,7 @@ import type { RootStoreType, RootStoreSnapshotType } from "./root-store";
 let store: RootStoreType;
 
 export function initializeStore(snapshot?: RootStoreSnapshotType) {
-  const _store: RootStoreType =
-    store ??
-    RootStore.create({
-      lots: {},
-    });
+  const _store: RootStoreType = store ?? RootStore.create();
 
   if (snapshot) {
     applySnapshot(_store, snapshot);

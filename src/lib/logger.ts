@@ -1,6 +1,8 @@
 import debug from "debug";
 
 export const logger = {
-  http: debug("http"),
-  user: debug("user"),
+  httpReq: debug("http:req"),
+  httpRes: debug("http:res"),
+  items: debug("items"),
+  me: debug("me"),
 };

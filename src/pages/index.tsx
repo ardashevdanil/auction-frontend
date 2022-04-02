@@ -22,8 +22,9 @@ const Home: NextPage = () => {
 
 export async function getServerSideProps(ctx: NextPageContext) {
   const store = initializeStore();
-  await store.user.fetchUser();
+
   await store.me.fetchMe(ctx);
+  await store.itemsStore.fetchItems();
 
   return injectServerSideStore(store);
 }

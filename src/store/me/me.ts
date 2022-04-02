@@ -37,7 +37,7 @@ const MeModel = types
           http.setHeader("Authorization", `Bearer ${session.jwt}`);
         }
       } catch (err) {
-        logger.user("Fetch me error", err);
+        logger.me("Fetch me error", err);
       }
     });
 

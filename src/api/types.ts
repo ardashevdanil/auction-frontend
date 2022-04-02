@@ -36,3 +36,19 @@ export type StrapiQueryFilters = {
   // Joins the filters in an "and" expression
   $and?: string | number;
 };
+
+export type CommonResData<D = any> = {
+  data: D;
+  meta?: ResPaginationData;
+};
+
+export type ResMetaData = {
+  pagination?: ResPaginationData;
+};
+
+export type ResPaginationData = {
+  page: number;
+  pageSize: number;
+  pageCount: number;
+  total: number;
+};
