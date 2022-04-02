@@ -1,16 +1,11 @@
-import { observer } from "mobx-react";
 import { twMerge } from "tailwind-merge";
-import { useStore } from "@lib/hooks";
 import { TextInput, ButtonText } from "@ui";
 import MenuSvg from "assets/images/icons/menu.svg";
 
 import type { SearchHeaderProps } from "./search-header.types";
 
-export const SearchHeader = observer(function SearchHeader(
-  props: SearchHeaderProps
-) {
+export function SearchHeader(props: SearchHeaderProps) {
   const { className } = props;
-  const { user } = useStore();
 
   const classes = twMerge("flex p-0 z-10 py-3 px-4 bg-indigo-400", className);
 
@@ -30,4 +25,4 @@ export const SearchHeader = observer(function SearchHeader(
       </ButtonText>
     </header>
   );
-});
+}

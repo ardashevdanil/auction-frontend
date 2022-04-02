@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "DEBUG=http,user next dev & yarn ts:watch",
+    "dev": "next dev & yarn ts:watch",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
