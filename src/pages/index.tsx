@@ -2,7 +2,7 @@ import type { NextPage, NextPageContext } from "next";
 import Head from "next/head";
 import { initializeStore, injectServerSideStore } from "@store";
 import { CommonPageTemplate } from "@features/common";
-import { ItemList } from "features/item-list";
+import { ItemsList } from "@features/items";
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       </Head>
 
       <CommonPageTemplate>
-        <ItemList />
+        <ItemsList />
       </CommonPageTemplate>
     </div>
   );

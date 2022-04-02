@@ -8,12 +8,14 @@ export function CommonPageTemplate(props: CommonPageTemplateProps) {
 
   const headerClasses = twMerge("sticky top-0 z-10", classes?.header);
 
+  const mainClasses = twMerge("bg-neutral-50", classes?.main);
+
   const navClasses = twMerge("fixed bottom-0", classes?.nav);
 
   return (
     <>
       <SearchHeader className={headerClasses} />
-      <main className={classes?.main}>{children}</main>
+      <main className={mainClasses}>{children}</main>
       <TouchMenu className={navClasses} />
     </>
   );
