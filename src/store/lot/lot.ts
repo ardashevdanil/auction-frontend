@@ -1,5 +1,6 @@
-import { types } from "mobx-state-tree";
+import { types, flow } from "mobx-state-tree";
 
+import { api } from "@api";
 import { User } from "../user";
 import type { UserType } from "../user";
 
@@ -8,6 +9,7 @@ export const Lot = types
     name: types.optional(types.string, ""),
     price: types.optional(types.number, 0),
     user: types.reference(User),
+    state: types.enumeration("State", ["idle", "pending", "error"]),
   })
   .views((self) => ({
     get priceX100() {

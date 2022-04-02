@@ -1,5 +1,5 @@
 import { types, flow } from "mobx-state-tree";
-import { userApiMock } from "@api/user";
+import { api } from "@api";
 import { logger } from "@lib/logger";
 
 const UserModel = types
@@ -21,12 +21,9 @@ const UserModel = types
       self.state = "pending";
 
       try {
-        const {
-          data: { id, name },
-        } = yield userApiMock.get();
+        const { data } = yield api.lot.findOne(1);
 
-        self.id = id;
-        self.name = name;
+        logger.user("Fetch success", data);
         self.state = "idle";
       } catch (err) {
         logger.user("Fetch user error", err);
