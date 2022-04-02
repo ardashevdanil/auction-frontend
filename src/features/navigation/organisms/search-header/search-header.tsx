@@ -2,6 +2,7 @@ import { observer } from "mobx-react";
 import { twMerge } from "tailwind-merge";
 import { useStore } from "@lib/hooks";
 import { TextInput, ButtonText } from "@ui";
+import { signIn } from "next-auth/client";
 import MenuSvg from "assets/images/icons/menu.svg";
 
 import type { SearchHeaderProps } from "./search-header.types";
@@ -18,7 +19,7 @@ export const SearchHeader = observer(function SearchHeader(
 
   return (
     <header className={classes}>
-      <ButtonText className={buttonClasses}>
+      <ButtonText className={buttonClasses} onClick={() => signIn("google")}>
         <MenuSvg />
       </ButtonText>
       <TextInput
