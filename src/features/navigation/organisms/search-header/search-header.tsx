@@ -1,5 +1,6 @@
 import { twMerge } from "tailwind-merge";
 import { TextInput, ButtonText } from "@ui";
+import { signIn } from "next-auth/client";
 import MenuSvg from "assets/images/icons/menu.svg";
 
 import type { SearchHeaderProps } from "./search-header.types";
@@ -13,7 +14,7 @@ export function SearchHeader(props: SearchHeaderProps) {
 
   return (
     <header className={classes}>
-      <ButtonText className={buttonClasses}>
+      <ButtonText className={buttonClasses} onClick={() => signIn("google")}>
         <MenuSvg />
       </ButtonText>
       <TextInput

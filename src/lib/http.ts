@@ -35,6 +35,10 @@ class HttpProvider {
   request<T = any>(config: AxiosRequestConfig) {
     return this.instance.request<T>(config);
   }
+
+  setHeader(name: string, value: string) {
+    this.instance.defaults.headers.common[name] = value;
+  }
 }
 
 export const http = new HttpProvider();
