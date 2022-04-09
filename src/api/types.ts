@@ -1,3 +1,17 @@
+// Documentation https://docs.strapi.io/developer-docs/latest/developer-resources/database-apis-reference/rest-api.html#api-parameters
+export type StrapiQueryParams<F = string> = {
+  sort?: F | F[];
+  filters?: Map<F, StrapiQueryFilters>;
+  populate?: F | F[];
+  fields?: F[];
+  pagination?: {
+    page: number;
+    pageSize?: number;
+  };
+  publicationState?: "live" | "preview";
+  locale?: "string";
+};
+
 export type StrapiQueryFilters = {
   // Equal
   $eq?: string | number;

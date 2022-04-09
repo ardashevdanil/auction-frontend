@@ -10,13 +10,13 @@ export const ItemsList = observer(function ItemsList() {
       {store.itemsStore.items.map((item) => (
         <ItemCard
           key={item.id}
-          title={item.title}
+          title={item.attributes.title}
           timeLeft="21:25:14"
-          maxBet={item.startBet}
+          maxBet={item.maxBet}
           location="Kirov"
-          betCount={12}
+          betCount={item.betCount}
           url="https://google.com"
-          imageUrl="/"
+          imageUrl={item.firstImageUrl}
         />
       ))}
     </div>

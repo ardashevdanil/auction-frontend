@@ -26,8 +26,7 @@
       "@store/*": ["./store/*"],
       "@api": ["./api/index"],
       "@api/*": ["./api/*"],
-      "@assets/*": ["./assets/*"],
-      "@serializers/*": ["./serializers/*"]
+      "@assets/*": ["./assets/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

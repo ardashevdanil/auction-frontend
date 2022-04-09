@@ -1,8 +1,7 @@
 import { types, flow } from "mobx-state-tree";
 import { api } from "@api";
 import { logger } from "@lib/logger";
-import { itemsSerializer } from "@serializers/items";
-import type { ItemsResData } from "@serializers/items";
+import type { ItemsResponse } from "@api";
 
 import { Item } from "../item";
 
@@ -16,9 +15,11 @@ const ItemsStoreModel = types
       self.state = "pending";
 
       try {
-        const { data } = yield api.items.find<ItemsResData>();
+        const { data }: ItemsResponse = yield api.items.find({
+          populate: ["images", "bets"],
+        });
 
-        self.items.push(...itemsSerializer(data));
+        self.items.push(...data.data);
         self.state = "idle";
       } catch (err) {
         logger.items("Fetch items error", err);

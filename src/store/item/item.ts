@@ -1,15 +1,38 @@
 import { types } from "mobx-state-tree";
+import { Image } from "../image";
+import { Bet } from "../bet";
 
 export const Item = types
   .model({
     id: types.number,
-    title: types.string,
-    description: types.string,
-    startBet: types.optional(types.number, 0),
-    minStep: types.optional(types.number, 0),
+    attributes: types.model({
+      title: types.string,
+      description: types.string,
+      start_bet: types.optional(types.number, 0),
+      min_step: types.optional(types.number, 0),
+      images: types.model({
+        data: types.array(Image),
+      }),
+      bets: types.model({
+        data: types.array(Bet),
+      }),
+    }),
   })
   .views((self) => ({
-    get priceX100() {
-      return self.startBet * 100;
+    get maxBet() {
+      const { start_bet, bets } = self.attributes;
+      const maxBet = bets.data
+        .slice()
+        .sort(
+          (bet1, bet2) => bet2.attributes.amount - bet1.attributes.amount
+        )[0];
+
+      return maxBet?.attributes.amount || start_bet;
+    },
+    get betCount() {
+      return self.attributes.bets.data.length;
+    },
+    get firstImageUrl() {
+      return self.attributes.images.data[0]?.attributes.url || "";
     },
   }));

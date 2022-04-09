@@ -1,4 +1,5 @@
 import axios from "axios";
+import qs from "qs";
 import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
 
 import { logger } from "@lib/logger";
@@ -33,7 +34,12 @@ class HttpProvider {
   }
 
   request<T = any>(config: AxiosRequestConfig) {
-    return this.instance.request<T>(config);
+    const resolveConfig: AxiosRequestConfig = {
+      paramsSerializer: qs.stringify,
+      ...config,
+    };
+
+    return this.instance.request<T>(resolveConfig);
   }
 
   setHeader(name: string, value: string) {
