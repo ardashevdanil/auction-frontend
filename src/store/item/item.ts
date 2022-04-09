@@ -7,7 +7,7 @@ export const Item = types
     id: types.number,
     attributes: types.model({
       title: types.string,
-      description: types.string,
+      description: types.maybeNull(types.string),
       start_bet: types.optional(types.number, 0),
       min_step: types.optional(types.number, 0),
       images: types.model({

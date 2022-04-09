@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { ReactNode, RefObject } from "react";
 
 export type CommonPageTemplateProps = {
   children: ReactNode | ReactNode[] | null;
@@ -6,5 +6,8 @@ export type CommonPageTemplateProps = {
     header?: string;
     main?: string;
     nav?: string;
+  };
+  refs?: {
+    mainRef?: RefObject<HTMLDivElement>;
   };
 };

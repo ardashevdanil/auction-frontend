@@ -4,7 +4,7 @@ import { SearchHeader, TouchMenu } from "@features/navigation";
 import type { CommonPageTemplateProps } from "./common-page-template.types";
 
 export function CommonPageTemplate(props: CommonPageTemplateProps) {
-  const { classes, children } = props;
+  const { classes, refs, children } = props;
 
   const headerClasses = twMerge("sticky top-0 z-10", classes?.header);
 
@@ -15,7 +15,9 @@ export function CommonPageTemplate(props: CommonPageTemplateProps) {
   return (
     <>
       <SearchHeader className={headerClasses} />
-      <main className={mainClasses}>{children}</main>
+      <main ref={refs?.mainRef} className={mainClasses}>
+        {children}
+      </main>
       <TouchMenu className={navClasses} />
     </>
   );

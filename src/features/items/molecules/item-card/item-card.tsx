@@ -1,13 +1,28 @@
 import Link from "next/link";
 import Image from "next/image";
+import { twMerge } from "tailwind-merge";
 import type { ItemCardProps } from "./item-card.types";
 
+export const ITEM_CARD_HEIGHT = 208;
+
+const classes = `flex flex-col relative overflow-hidden h-52 bg-white  rounded-md shadow-[0px_20px_24px_-4px_rgba(85,_105,_135,_0.04),_0px_8px_8px_-4px_rgba(85,_105,_135,_0.02)]`;
+
 export function ItemCard(props: ItemCardProps) {
-  const { title, timeLeft, maxBet, location, betCount, imageUrl, url } = props;
+  const {
+    title,
+    timeLeft,
+    maxBet,
+    location,
+    betCount,
+    imageUrl,
+    url,
+    className,
+  } = props;
+  const mergedClasses = twMerge(classes, className);
 
   return (
     <Link href={url}>
-      <div className="flex flex-col relative overflow-hidden h-52 bg-white  rounded-md shadow-[0px_20px_24px_-4px_rgba(85,_105,_135,_0.04),_0px_8px_8px_-4px_rgba(85,_105,_135,_0.02)]">
+      <div className={mergedClasses}>
         <div className="absolute top-1 right-1 bg-white py-1 px-[6px] text-[8px] leading-[8px] font-bold rounded-full">
           {timeLeft}
         </div>

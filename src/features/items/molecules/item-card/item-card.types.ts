@@ -6,4 +6,5 @@ export type ItemCardProps = {
   betCount: number;
   imageUrl: string;
   url: string;
+  className?: string;
 };

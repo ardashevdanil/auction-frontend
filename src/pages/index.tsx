@@ -1,3 +1,4 @@
+import { useRef, useLayoutEffect, useState } from "react";
 import type { NextPage, NextPageContext } from "next";
 import Head from "next/head";
 import { initializeStore, injectServerSideStore } from "@store";
@@ -12,9 +13,8 @@ const Home: NextPage = () => {
         <meta name="description" content="Fast auction app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <CommonPageTemplate>
-        <ItemsList />
+        <ItemsList height={500} />
       </CommonPageTemplate>
     </div>
   );
