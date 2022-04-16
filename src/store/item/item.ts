@@ -1,8 +1,8 @@
 import { types } from "mobx-state-tree";
-import { Image } from "../image";
-import { Bet } from "../bet";
+import { ImageModel } from "../image";
+import { BetModel } from "../bet";
 
-export const Item = types
+export const ItemModel = types
   .model({
     id: types.number,
     attributes: types.model({
@@ -11,10 +11,10 @@ export const Item = types
       start_bet: types.optional(types.number, 0),
       min_step: types.optional(types.number, 0),
       images: types.model({
-        data: types.array(Image),
+        data: types.array(ImageModel),
       }),
       bets: types.model({
-        data: types.array(Bet),
+        data: types.array(BetModel),
       }),
     }),
   })

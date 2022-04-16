@@ -8,6 +8,8 @@ export type CommonPageTemplateProps = {
     nav?: string;
   };
   refs?: {
+    headerRef?: RefObject<HTMLDivElement>;
     mainRef?: RefObject<HTMLDivElement>;
+    navRef?: RefObject<HTMLDivElement>;
   };
 };

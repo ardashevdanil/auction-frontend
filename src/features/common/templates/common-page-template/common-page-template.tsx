@@ -14,11 +14,11 @@ export function CommonPageTemplate(props: CommonPageTemplateProps) {
 
   return (
     <>
-      <SearchHeader className={headerClasses} />
+      <SearchHeader ref={refs?.headerRef} className={headerClasses} />
       <main ref={refs?.mainRef} className={mainClasses}>
         {children}
       </main>
-      <TouchMenu className={navClasses} />
+      <TouchMenu ref={refs?.navRef} className={navClasses} />
     </>
   );
 }

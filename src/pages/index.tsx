@@ -1,11 +1,16 @@
-import { useRef, useLayoutEffect, useState } from "react";
 import type { NextPage, NextPageContext } from "next";
 import Head from "next/head";
 import { initializeStore, injectServerSideStore } from "@store";
 import { CommonPageTemplate } from "@features/common";
 import { ItemsList } from "@features/items";
+import { useCalculateRemainingHeight } from "@lib/hooks";
 
 const Home: NextPage = () => {
+  const {
+    refs: [headerRef, navRef],
+    remainingHeight,
+  } = useCalculateRemainingHeight(2);
+
   return (
     <div>
       <Head>
@@ -13,8 +18,8 @@ const Home: NextPage = () => {
         <meta name="description" content="Fast auction app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <CommonPageTemplate>
-        <ItemsList height={500} />
+      <CommonPageTemplate refs={{ headerRef, navRef }}>
+        <ItemsList height={remainingHeight} />
       </CommonPageTemplate>
     </div>
   );

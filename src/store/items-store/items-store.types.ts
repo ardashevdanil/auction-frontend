@@ -1,4 +1,6 @@
-import type { Instance } from "mobx-state-tree";
-import { ItemsStore } from "./items-store";
+import type { Instance, SnapshotIn } from "mobx-state-tree";
+import { ItemsFiltersModel, ItemsStoreModel } from "./items-store";
 
-export type ItemsStoreType = Instance<typeof ItemsStore>;
+export type ItemsStoreType = Instance<typeof ItemsStoreModel>;
+export type ItemsStoreSnapshotType = SnapshotIn<typeof ItemsStoreModel>;
+export type ItemsFiltersSnapshotType = SnapshotIn<typeof ItemsFiltersModel>;

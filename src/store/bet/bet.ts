@@ -1,6 +1,6 @@
 import { types } from "mobx-state-tree";
 
-export const Bet = types.model({
+export const BetModel = types.model({
   id: types.number,
   attributes: types.model({
     amount: types.number,

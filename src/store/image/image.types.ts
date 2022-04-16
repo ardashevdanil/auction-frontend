@@ -1,5 +1,5 @@
 import type { Instance, SnapshotIn } from "mobx-state-tree";
-import { Image } from "./image";
+import { ImageModel } from "./image";
 
-export type ImageType = Instance<typeof Image>;
-export type ImageSnapshotType = SnapshotIn<typeof Image>;
+export type ImageType = Instance<typeof ImageModel>;
+export type ImageSnapshotType = SnapshotIn<typeof ImageModel>;

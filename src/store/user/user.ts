@@ -1,6 +1,6 @@
 import { types } from "mobx-state-tree";
 
-const UserModel = types
+export const UserModel = types
   .model({
     id: types.optional(types.string, ""),
     name: types.optional(types.string, ""),

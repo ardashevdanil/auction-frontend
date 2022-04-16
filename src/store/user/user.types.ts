@@ -1,4 +1,4 @@
 import type { Instance } from "mobx-state-tree";
-import { User } from "./user";
+import { UserModel } from "./user";
 
-export type UserType = Instance<typeof User>;
+export type UserType = Instance<typeof UserModel>;

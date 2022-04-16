@@ -1,6 +1,6 @@
 import { types } from "mobx-state-tree";
 
-export const Image = types.model({
+export const ImageModel = types.model({
   id: types.number,
   attributes: types.model({
     name: types.string,

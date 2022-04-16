@@ -5,7 +5,7 @@ import { NextPageContext } from "next";
 import { getSession } from "next-auth/client";
 import { http } from "@lib/http";
 
-const MeModel = types
+export const MeModel = types
   .model({
     id: types.maybeNull(types.number),
     name: types.optional(types.string, ""),

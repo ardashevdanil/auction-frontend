@@ -1,4 +1,4 @@
 import type { Instance } from "mobx-state-tree";
-import { Me } from "./me";
+import { MeModel } from "./me";
 
-export type MeType = Instance<typeof Me>;
+export type MeType = Instance<typeof MeModel>;

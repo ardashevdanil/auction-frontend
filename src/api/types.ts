@@ -1,7 +1,7 @@
 // Documentation https://docs.strapi.io/developer-docs/latest/developer-resources/database-apis-reference/rest-api.html#api-parameters
-export type StrapiQueryParams<F = string> = {
+export type StrapiQueryParams<F extends string> = {
   sort?: F | F[];
-  filters?: Map<F, StrapiQueryFilters>;
+  filters?: Partial<Record<F, StrapiQueryFilters>>;
   populate?: F | F[];
   fields?: F[];
   pagination?: {
@@ -53,7 +53,7 @@ export type StrapiQueryFilters = {
 
 export type CommonResData<D = any> = {
   data: D;
-  meta?: ResPaginationData;
+  meta?: ResMetaData;
 };
 
 export type ResMetaData = {
